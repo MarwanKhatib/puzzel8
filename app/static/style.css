@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 0.2s;
+}
+:root {
+    --size: 150px;
+}
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(135deg, white, lightgreen, darkblue);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 482px;
+    height: 482px;
+    border: 10px solid black;
+    box-shadow: 5px 5px 10px rgb(78, 78, 78);
+}
+
+.viewer {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid black;
+    width: 330px;
+    height: 482px;
+    margin: 0px 30px 30px 30px;
+}
+
+.pro-container {
+    display: none;
+}
+
+.show-pro-container {
+    display: flex;
+}
+
+.puzzel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 58px;
+    height: 58px;
+    border: 4px solid black;
+    margin: 2px;
+    box-shadow: 5px 5px 10px rgb(78, 78, 78);
+}
+
+.puzzel>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    font-size: 19px;
+    font-weight: 900;
+    margin: 0.5px;
+    text-shadow: 3px 3px 5px rgb(57, 57, 57);
+}
+
+.container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--size);
+    height: var(--size);
+    font-size: calc(var(--size)/2);
+    font-weight: 900;
+    margin: 2px;
+    text-shadow: 3px 3px 5px rgb(57, 57, 57);
+}
+
+.container>div {
+    transition: all ease-in-out 0.2s;
+}
+
+.sq1,
+.students :nth-child(1) {
+    background-color: rgb(203, 73, 73);
+}
+
+.sq2,
+.students :nth-child(4) {
+    background-color: rgb(99, 218, 99);
+}
+
+.sq3,
+.students :nth-child(2) {
+    background-color: rgb(73, 73, 191);
+}
+
+.sq4,
+.students :nth-child(3) {
+    background-color: rgb(190, 100, 183);
+}
+
+.sq5 {
+    background-color: rgb(192, 206, 4);
+}
+
+.sq6 {
+    background-color: rgb(78, 202, 185);
+}
+
+.sq7 {
+    background-color: rgb(191, 146, 11);
+}
+
+.sq8 {
+    background-color: rgb(92, 207, 26);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-container .title {
+    display: flex;
+
+}
+
+.new-game {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    bottom: 50px;
+    left: 45%;
+    border: none;
+    background-color: rgb(77, 77, 247);
+    color: #efefef;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(50, 50, 50);
+
+}
+
+h1 {
+    flex-basis: 50%;
+    text-align: center;
+    font-family: cursive;
+}
+
+.form-container form .current,
+.form-container form .goal {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 482px;
+    height: 482px;
+    border: 10px solid black;
+    box-shadow: 5px 5px 10px rgb(78, 78, 78);
+}
+
+.form-container form .current>input,
+.form-container form .goal>input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--size);
+    height: var(--size);
+    font-size: calc(var(--size)/2);
+    font-weight: 900;
+    margin: 2px;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgb(57, 57, 57);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(31, 157, 31);
+    border: none;
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: 900;
+    color: #1e1e1e;
+    box-shadow: 2px 2px 5px rgb(72, 72, 72);
+    transition: all ease-in-out 0.2s;
+    background-color: rgb(203, 218, 0);
+}
+
+.students {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.students>p {
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 5px;
+    font-size: 21px;
+    font-weight: 800;
+    font-family: cursive;
+}

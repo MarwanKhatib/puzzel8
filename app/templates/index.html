@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="{% static 'style.css' %}" />
+  <script>
+    var data = JSON.parse("{{data|escapejs}}");
+  </script>
+  <script src="{% static 'main.js' %}"></script>
+
+  <body>
+    <div class="form-container">
+      <div class="title">
+        <h1>Start From</h1>
+        <h1>End In</h1>
+      </div>
+      <form id="form" method="post">
+        {% csrf_token %}
+        <div class="current">
+          <input
+            type="text"
+            name="c1"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="c2"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="c3"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="c4"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="c5"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="c6"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="c7"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="c8"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="c9"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+        </div>
+        <div class="goal">
+          <input
+            type="text"
+            name="g1"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="g2"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="g3"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="g4"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="g5"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="g6"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="g7"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="g8"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+          <input
+            type="text"
+            name="g9"
+            class="values"
+            maxlength="1"
+            pattern="^[0-8]\d*$"
+            required
+            title="enter numbers from [0] to [8]"
+          />
+        </div>
+      </form>
+      <div class="button">
+        <input type="submit" value="Start" form="form" />
+      </div>
+    </div>
+    <div class="pro-container">
+      <div class="viewer"></div>
+      <div class="container"></div>
+      <button id="new" class="new-game">New Game</button>
+    </div>
+    <script>
+      var container = document.querySelector(".container");
+      initial(curr, container);
+      move(moves);
+      {
+        {
+          fun;
+        }
+      }
+      {
+        {
+          warning;
+        }
+      }
+    </script>
+    <div class="students">
+      <p>johnny_154825</p>
+      <p>tala_155613</p>
+      <p>zakarya_152040</p>
+      <p>rama_152040</p>
+    </div>
+  </body>
+</html>
